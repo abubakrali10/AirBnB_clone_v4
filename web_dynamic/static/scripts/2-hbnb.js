@@ -12,4 +12,17 @@ $(document).ready(function () {
     });
     $('div.amenities h4').text(checked.join(', '));
   });
+
+  const apiStatus = $('div#api_status');
+  $.ajax({
+    type: 'GET',
+    dataType: 'json',
+    url: 'http://0.0.0.0:5001/api/v1/status/',
+    success: (data) => {
+      apiStatus.addClass('available');
+    },
+    error: (xhr, status, error) => {
+      apiStatus.removeClass('available');
+    }
+  });
 });
