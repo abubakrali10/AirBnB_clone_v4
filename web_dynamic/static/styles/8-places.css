@@ -99,3 +99,35 @@
 .user {
   margin-bottom: 1.5%;
 }
+.reviews{
+    margin-top: 30px;
+}
+.reviews .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-top: 1px solid #DDDDDD;
+}
+.reviews .head span{
+    font-size: 16px;
+    background: #FF5A5F;
+    color: #FFFFFF;
+    padding: 3px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reviews .head span{
+    opacity: 0.9;
+}
+.reviews .head h2{
+    margin-bottom: 0;
+    font-size: 22px;
+}
+.reviews li{
+  margin-bottom: 25px;
+}
+.reviews li h3{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
